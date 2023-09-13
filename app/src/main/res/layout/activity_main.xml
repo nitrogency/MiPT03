@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvInput"
+            android:layout_width="389dp"
+            android:layout_height="357dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginBottom="369dp"
+            android:gravity="bottom|end"
+            android:padding="16dp"
+            android:text="@string/tvInput_default"
+            android:textSize="48sp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="412dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="290dp">
+
+                <Button
+                    android:id="@+id/clearButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:text="@string/calc_clear"
+                    android:onClick="onClearButtonClick"
+                    grid:layout_column="0"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/clearAllButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:text="@string/calc_clear_all"
+                    android:onClick="onClearAllButtonClick"
+                    grid:layout_column="1"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/multiplyButton"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_multiply"
+                    android:onClick="onMultiplyButtonClick"
+                    grid:layout_column="3"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/divideButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_divide"
+                    android:onClick="onDivideButtonClick"
+                    grid:layout_column="2"
+                    grid:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="412dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="217dp">
+
+                <Button
+                    android:id="@+id/num7Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_7"
+                    android:onClick="onNum7ButtonClick"
+                    grid:layout_column="0"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num9Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_9"
+                    android:onClick="onNum9ButtonClick"
+                    grid:layout_column="2"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/minusButton"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_minus"
+                    android:onClick="onMinusButtonClick"
+                    grid:layout_column="3"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num8Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_8"
+                    android:onClick="onNum8ButtonClick"
+                    grid:layout_column="1"
+                    grid:layout_row="0" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="412dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="143dp">
+
+                <Button
+                    android:id="@+id/num4Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_4"
+                    android:onClick="onNum4ButtonClick"
+                    grid:layout_column="0"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num6Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_6"
+                    android:onClick="onNum6ButtonClick"
+                    grid:layout_column="2"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/plusButton"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_plus"
+                    android:onClick="onPlusButtonClick"
+                    grid:layout_column="3"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num5Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_5"
+                    android:onClick="onNum5ButtonClick"
+                    grid:layout_column="1"
+                    grid:layout_row="0" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="412dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="71dp">
+
+                <Button
+                    android:id="@+id/num1Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_1"
+                    android:onClick="onNum1ButtonClick"
+                    grid:layout_column="0"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num3Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_3"
+                    android:onClick="onNum3ButtonClick"
+                    grid:layout_column="2"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/rootButton"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_sqrt"
+                    android:onClick="onRootButtonClick"
+                    grid:layout_column="3"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/num2Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_2"
+                    android:onClick="onNum2ButtonClick"
+                    grid:layout_column="1"
+                    grid:layout_row="0" />
+        </androidx.gridlayout.widget.GridLayout>
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+                <Button
+                    android:id="@+id/num0Button"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_0"
+                    android:onClick="onNum0ButtonClick"
+                    grid:layout_column="0"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/dotButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_dot"
+                    android:onClick="onDotButtonClick"
+                    grid:layout_column="1"
+                    grid:layout_row="0" />
+
+                <Button
+                    android:id="@+id/resultButton"
+                    android:layout_width="147dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/calc_equals"
+                    android:onClick="onResultButtonClick"
+                    grid:layout_column="3"
+                    grid:layout_row="0" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+</RelativeLayout>
